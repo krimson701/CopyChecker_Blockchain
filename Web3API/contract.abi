@@ -1,0 +1,118 @@
+[
+	{
+		"constant": False,
+		"inputs": [],
+		"name": "destroyContract",
+		"outputs": [],
+		"payable": False,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": False,
+		"inputs": [
+			{
+				"name": "fileId",
+				"type": "uint256"
+			},
+			{
+				"name": "fileHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "updateFile",
+		"outputs": [],
+		"payable": False,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": False,
+		"inputs": [
+			{
+				"name": "userId",
+				"type": "uint256"
+			},
+			{
+				"name": "fileHash",
+				"type": "bytes32"
+			}
+		],
+		"name": "createFile",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": False,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": True,
+		"inputs": [],
+		"name": "getContractOwner",
+		"outputs": [
+			{
+				"name": "",
+				"type": "address"
+			}
+		],
+		"payable": False,
+		"stateMutability": "pure",
+		"type": "function"
+	},
+	{
+		"constant": False,
+		"inputs": [
+			{
+				"name": "fileId",
+				"type": "uint256"
+			}
+		],
+		"name": "deleteFile",
+		"outputs": [],
+		"payable": False,
+		"stateMutability": "nonpayable",
+		"type": "function"
+	},
+	{
+		"constant": True,
+		"inputs": [],
+		"name": "getNumberOfFiles",
+		"outputs": [
+			{
+				"name": "",
+				"type": "uint256"
+			}
+		],
+		"payable": False,
+		"stateMutability": "view",
+		"type": "function"
+	},
+	{
+		"anonymous": False,
+		"inputs": [
+			{
+				"indexed": False,
+				"name": "FileId",
+				"type": "uint256"
+			}
+		],
+		"name": "MakeFileId",
+		"type": "event"
+	},
+	{
+		"anonymous": False,
+		"inputs": [
+			{
+				"indexed": False,
+				"name": "str",
+				"type": "string"
+			}
+		],
+		"name": "MakeString",
+		"type": "event"
+	}
+]
